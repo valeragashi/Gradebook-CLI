@@ -42,3 +42,13 @@ To verify the system logic:
 export PYTHONPATH=.
 python -m unittest tests/test_service.py
 
+## 🧠 Design Decisions & Limitations
+
+### Design Decisions
+* **JSON-Based Storage:** I used a JSON file for data persistence because it is lightweight and allows the gradebook to save between sessions without needing a complex database setup.
+* **Modular Architecture:** The project is divided into `service.py`, `storage.py`, and `models.py` to keep the code organized and easy to update.
+* **Unique IDs:** I implemented `uuid` to give every student a unique ID, preventing confusion if two students have the same name.
+
+### Limitations
+* **Local Environment:** The system is built for a single user on a local machine and doesn't support multiple people editing at the same time.
+* **CLI Only:** This is a terminal-based app and does not have a visual window or web interface.
