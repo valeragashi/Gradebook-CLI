@@ -1,6 +1,16 @@
 from gradebook.storage import save_data, load_data
 import uuid
 
+#task 6
+def parse_grade(grade_input):
+    try:
+        grade = float(grade_input)
+        if 0 <= grade <= 100:
+            return grade
+        else:
+            raise ValueError("Grade must be between 0 and 100.")
+    except (ValueError, TypeError):
+        raise ValueError("Invalid grade input. Please enter a number between 0 and 100.")
 def _get_all():
     return load_data()
 def add_student(name):
