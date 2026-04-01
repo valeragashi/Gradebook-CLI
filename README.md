@@ -2,7 +2,7 @@
 
 A Python-based CLI application designed to manage student enrollments, courses, and academic performance tracking.
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 Follow these steps to set up the project on your local machine:
 
@@ -14,7 +14,7 @@ Follow these steps to set up the project on your local machine:
    * **Windows:** `venv\Scripts\activate`
    * **macOS/Linux:** `source venv/bin/activate`
 
-## 🛠️ Usage
+## Usage
 
 ### 1. Seed the Database
 Before running the app, populate it with initial sample data (students, courses, and enrollments):
@@ -42,7 +42,7 @@ To verify the system logic:
 export PYTHONPATH=.
 python -m unittest tests/test_service.py
 
-## 🧠 Design Decisions & Limitations
+## Design Decisions & Limitations
 
 ### Design Decisions
 * **JSON-Based Storage:** I used a JSON file for data persistence because it is lightweight and allows the gradebook to save between sessions without needing a complex database setup.
