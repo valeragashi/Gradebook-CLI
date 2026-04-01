@@ -1,5 +1,34 @@
 {
-    "students": [],
-    "courses": [],
-    "enrollments": []
+    "students": [
+        {
+            "id": "8b8204cb",
+            "name": "Geri"
+        }
+    ],
+    "courses": [
+        {
+            "code": "CS101",
+            "title": "Intro to CS"
+        },
+        {
+            "code": "MATH101",
+            "title": "Intro to Math"
+        }
+    ],
+    "enrollments": [
+        {
+            "student_id": "8b8204cb",
+            "course_code": "CS101",
+            "grades": [
+                90
+            ]
+        },
+        {
+            "student_id": "8b8204cb",
+            "course_code": "MATH101",
+            "grades": [
+                80
+            ]
+        }
+    ]
 }
