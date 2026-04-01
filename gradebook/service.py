@@ -48,3 +48,16 @@ def compute_gpa(student_id):
     if averages:
         return sum(averages) / len(averages)
     return 0.0
+
+def enroll(student_id, course_code):
+    data = _get_all()
+    data.append({"type": "enrollment", "student_id": student_id, "course_code": course_code, "grades": []})
+    save_data(data)
+def list_courses():
+    data= _get_all()
+    courses = [item for item in data if item["type"] == "course"]
+    return sorted(courses, key=lambda c: c["code"])
+
+def list_enrollments():
+    data= _get_all()
+    return [item for item in data if item["type"] == "enrollment"]
