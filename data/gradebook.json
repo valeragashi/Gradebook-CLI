@@ -1,34 +1,43 @@
 {
     "students": [
         {
-            "id": "8b8204cb",
-            "name": "Geri"
+            "id": "601c4fa2",
+            "name": "Valera Gashi"
+        },
+        {
+            "id": "50d9712b",
+            "name": "Feri Gashi"
+        },
+        {
+            "id": "f838eb73",
+            "name": "Vesa Gashi"
         }
     ],
     "courses": [
         {
             "code": "CS101",
-            "title": "Intro to CS"
+            "title": "Intro to Computer Science"
         },
         {
             "code": "MATH101",
-            "title": "Intro to Math"
+            "title": "Intro to Mathematics"
         }
     ],
     "enrollments": [
         {
-            "student_id": "8b8204cb",
+            "student_id": "601c4fa2",
             "course_code": "CS101",
-            "grades": [
-                90
-            ]
+            "grades": []
         },
         {
-            "student_id": "8b8204cb",
+            "student_id": "601c4fa2",
             "course_code": "MATH101",
-            "grades": [
-                80
-            ]
+            "grades": []
+        },
+        {
+            "student_id": "50d9712b",
+            "course_code": "CS101",
+            "grades": []
         }
     ]
 }
